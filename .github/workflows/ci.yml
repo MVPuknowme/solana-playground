@@ -126,5 +126,5 @@ jobs:
       - name: Check git status
         run: git status --porcelain | wc -l | grep -q -w "0"
 
-      - name: Build
-        run: .pnpk
+      - name: Build and verify PNPK post-build proof
+        run: yarn build
