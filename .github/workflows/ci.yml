@@ -34,6 +34,9 @@ jobs:
       - name: Check format
         run: yarn check-format
 
+      - name: Test PNPK fail-closed verifier
+        run: yarn test:pnpk
+
   format_server:
     runs-on: ubuntu-latest
     name: Format server

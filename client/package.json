@@ -84,6 +84,7 @@
     "start": "yarn generate && craco start",
     "build": "yarn generate && GENERATE_SOURCEMAP=false craco build",
     "postbuild": "node scripts/run-pnpk.mjs .pnpk",
+    "test:pnpk": "node --test scripts/run-pnpk.test.mjs",
     "build-wasm": "build=\"../wasm/build.sh\" && chmod +x $build && $build --update",
     "format": "prettier --write src/",
     "check-format": "prettier --check src/",
