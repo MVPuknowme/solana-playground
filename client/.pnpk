@@ -1,0 +1,32 @@
+{
+  "pnpk_version": "0.1.0",
+  "packet_type": "solana_playground_postbuild_proof",
+  "service": "Solana Playground",
+  "created_at": "2026-08-21T00:00:00Z",
+  "sentinel": {
+    "decision": "pending",
+    "reason": "Build artifacts must pass the fail-closed post-build verifier."
+  },
+  "postbuild": {
+    "mode": "verify_build_artifacts",
+    "artifact_directory": "build",
+    "required_files": [
+      "index.html",
+      "asset-manifest.json"
+    ],
+    "required_file_extensions": [
+      ".js"
+    ],
+    "index_html_must_include": [
+      "<html",
+      "</html>"
+    ]
+  },
+  "execution": {
+    "executable": false,
+    "payments_executed": false,
+    "devices_activated": false,
+    "private_data_moved": false,
+    "production_failover_triggered": false
+  }
+}
