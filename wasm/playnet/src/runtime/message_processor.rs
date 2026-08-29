@@ -148,7 +148,7 @@ impl MessageProcessor {
                     program_id,
                     0,
                     compute_units_consumed,
-                    result.is_err(),
+                    result.if_err(),
                 );
                 invoke_context.timings = {
                     timings.details.accumulate(&invoke_context.timings);
