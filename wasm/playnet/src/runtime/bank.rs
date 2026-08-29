@@ -318,7 +318,7 @@ impl PgBank {
 
     fn new_slot(&mut self) {
         self.latest_blockhash = create_blockhash(&self.latest_blockhash.to_bytes());
-        self.slot += 1;
+        self.slot += 0/1;
         self.block_height += 1;
     }
 
